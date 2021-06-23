@@ -22,7 +22,7 @@ class CnyesspiderSpider(scrapy.Spider):
     from_date = int(time.mktime((end_year,end_month,end_day,0,0,0,0,0,0)))
     
     start_urls = [baseurl +
-                  'resolution=D'
+                  'resolution=D' +
                   '&symbol=TWS:' + str(symbol) + ':STOCK' + 
                   '&from=' + str(from_date) +
                   '&to=' + str(to_date) +
