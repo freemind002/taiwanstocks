@@ -16,8 +16,8 @@ class database(Save):
     def __init__(self):
         config = {'host':'127.0.0.1',
                   'port':3306,
-                  'user':'root',
-                  'password':'a123456',
+                  'user':'',
+                  'password':'',
                   'db':'taiwanindexdb'}
         self.__connection = pymysql.connect(**config)
     def _Save__isExist(self,name):
